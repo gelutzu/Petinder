@@ -1,0 +1,13 @@
+Congratulations, you have access to the Petfinder API!
+
+Welcome: george
+Log out
+
+API Key
+e3c9b6bee87f4314a2b6cd95e68fda76
+
+API Secret
+158a52184e64e1ed995cc600e3c93ecc
+
+API Status
+Active
