@@ -1,0 +1,33 @@
+
+    body {
+        background-color: #F5F7FA;
+    }
+
+    .footers {
+    	font-family: "Comic Sans MS", Helvetica, Times New Roman;
+    	font-size: 12px;
+    	font-weight: bold;
+        position: fixed;
+        bottom: 0;
+        background-color: #e6e6e6;
+        text-align: center;
+        height: 7%;
+        width: 100%;
+        padding: 1%;
+        left: 0px;
+        border-top: 1px solid lightgray;
+    }
+
+    .navbar {
+        background-color: #e6e6e6;
+        border-bottom: 1px solid lightgray;
+    }
+
+     .logoname {
+     	color: black;
+     	font-family: "Comic Sans MS", Helvetica, Times New Roman;
+     	font-size: 22px;
+     	font-weight: bold;
+     }
+
+   

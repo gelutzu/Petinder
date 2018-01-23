@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Petinder</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Petinder</h1>
+
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
+
+    <form id="band-form">
+    <label for="band-input">Add a Rock Band</label>
+    <input type="text" id="band-input"><br>
+
+    <!--Button triggers new band to be added -->
+    <input id="add-band" type="submit" value="Add a Band that rocks!">
+    </form>
+
+    <div id="petfinderInfo"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&shelterid=KY305&output=full&format=json";
+            $.ajax({
+                type : 'GET',
+                data : {},
+                url : url+'&callback=?' ,
+                dataType: 'json',
+                success : function(data) {              
+                    // stores result
+                    var result = '';
+        
+                    var petfinder = data.petfinder;
+                    var infoHTML = '<ul>';
+                    infoHTML += '<li>';
+                    infoHTML += '<strong>Description</strong><br>';
+                    infoHTML += petfinder.pet.description['$t'];
+                    infoHTML += '</li>';
+        
+                    infoHTML += '</li>';
+        
+                    infoHTML += '</ul>';
+                    // return infoHTML;
+                    $('#petfinderInfo').html(infoHTML);
+        
+                    // $('#petfinderInfo').html(petfinder.pet.description['$t']);
+                    // 
+                    console.log(petfinder);
+                },
+                error : function(request,error)
+                {
+                    alert("Request: "+JSON.stringify(request));
+                }
+            });
+        });
+    
+</script>
+</div>
+</body> 
+    
+</html>

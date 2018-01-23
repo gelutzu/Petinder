@@ -1,78 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <title>Petinder</title>
-  <style type="text/css">
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
-    
-  </style>
+    <meta charset="utf-8" />
+    <title>Petinder</title>
+
+    <!--Adding BootStrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Regular CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--Adding BootStrap JavScript-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--Adding jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <!--Adding Navbar Bootstrap-->
+    <nav class="navbar navbar-light">
+        <!--Logo-->
+        <a class="logo" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="40" height="40"></a>
+        <!--Logo Name-->
+        <a class="logoname" href="index.html" style="text-decoration:none">PeTinder</a>
+        <!--Toggler-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--NavBar Links-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
 
-  <div class="container">
-    <h1>Petinder</h1>
+        <!--Adding Footer Bootstrap-->
+        <footer class="footers">
+            <p>Copyright 2018 PeTinder</p>
+        </footer>
+</body>
 
-    <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
-
-    <form id="band-form">
-    <label for="band-input">Add a Rock Band</label>
-    <input type="text" id="band-input"><br>
-
-    <!--Button triggers new band to be added -->
-    <input id="add-band" type="submit" value="Add a Band that rocks!">
-    </form>
-
-    <div id="petfinderInfo"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
-    <script type="text/javascript">
-
-        $(document).ready(function(){
-            var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&shelterid=KY305&output=full&format=json";
-            $.ajax({
-                type : 'GET',
-                data : {},
-                url : url+'&callback=?' ,
-                dataType: 'json',
-                success : function(data) {              
-                    // stores result
-                    var result = '';
-        
-                    var petfinder = data.petfinder;
-                    var infoHTML = '<ul>';
-                    infoHTML += '<li>';
-                    infoHTML += '<strong>Description</strong><br>';
-                    infoHTML += petfinder.pet.description['$t'];
-                    infoHTML += '</li>';
-        
-                    infoHTML += '</li>';
-        
-                    infoHTML += '</ul>';
-                    // return infoHTML;
-                    $('#petfinderInfo').html(infoHTML);
-        
-                    // $('#petfinderInfo').html(petfinder.pet.description['$t']);
-                    // 
-                    console.log(petfinder);
-                },
-                error : function(request,error)
-                {
-                    alert("Request: "+JSON.stringify(request));
-                }
-            });
-        });
-    
-</script>
-</div>
-</body> 
-    
 </html>
