@@ -1,6 +1,7 @@
 
     body {
         background-color: #F5F7FA;
+        height: 1000px;
     }
 
     .footers {
@@ -29,5 +30,6 @@
      	font-size: 22px;
      	font-weight: bold;
      }
+
 
    

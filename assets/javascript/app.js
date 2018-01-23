@@ -21,9 +21,6 @@ $(document).ready(function(){
                     $('#petInfo').html(info);
                     $('#petImage').html(h);
                     console.log(info);
-        
-                    // $('#petfinderInfo').html(petfinder.pet.description['$t']);
-                    // 
                     console.log(petfinder);
                 },
                 error : function(request,error)
