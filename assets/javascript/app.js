@@ -8,19 +8,29 @@ $(document).ready(function(){
                 success : function(data) {              
                     // stores result
                     var result = '';
-        
                     var petfinder = data.petfinder;
                     var info;
                     var pic;
-                    var h = $('<img>');
-                    
+                    var image = $('<img>');
+                    var name;
+                    var gender;
                     info = petfinder.pet.description['$t'];
                     pic = petfinder.pet.media.photos.photo[2].$t;
-                    h.attr('src', pic);
+                    name = petfinder.pet.name.$t;
+                    gender = petfinder.pet.sex.$t;
+                    if (gender == 'M'){
+                        gender = 'Male';
+                    }
+                    else if (gender == 'F'){
+                        gender = 'Female';
+                    }
+                    image.attr('src', pic);
                     // return infoHTML;
                     $('#petInfo').html(info);
-                    $('#petImage').html(h);
-                    console.log(info);
+                    $('#petName').html(name);
+                    $('#petImage').html(image);
+                    $('#petGender').html(gender);
+                    console.log(gender);
                     console.log(petfinder);
                 },
                 error : function(request,error)
@@ -28,4 +38,4 @@ $(document).ready(function(){
                     alert("Request: "+JSON.stringify(request));
                 }
             });
-        });
+});

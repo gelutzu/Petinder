@@ -15,11 +15,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Javascript -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    
+    <script type="text/javascript" src="assets/javascript/signin.js"></script>
 </head>
 
-<body>
-    <!--Adding Navbar Bootstrap-->
+<body class="text-center">
     <nav class="navbar navbar-light">
         <!--Logo-->
         <a class="logo" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="40" height="40"></a>
@@ -38,21 +42,32 @@
             </ul>
         </div>
     </nav>
-    <div class="fluid-container">
-        <div class="row">
-        <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-                <div id="petImage"></div>
-                <h2 id="petName"></h2>
-                <h3 id="petGender"></h3>
-                <div id="petInfo"></div>
-                <button id="pass">Pass</button>
-                <button id="rent">Rent</button>
-                <button id="adopt">Adopt</button>      
-            </div>
-        <div class="col-lg-4"></div>
-        </div>
-    </div>
+    <form class="form-signin">
+      <img class="mb-4" src="assets/images/logofullycropped.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Password" required>
+  <!--     <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div> -->
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" id="quickstart-sign-in" name="signin">Sign In</button>
+      <button class="btn btn-lg btn-primary btn-block" id="quickstart-sign-up" name="signup">Sign Up</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+
+    </form>
+
+    <div class="quickstart-user-details-container">
+            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+            <div>Firebase auth <code>currentUser</code> object value:</div>
+            <pre><code id="quickstart-account-details">null</code></pre>
+          </div>
 
     <!--Adding Footer Bootstrap-->
     <footer class="footers">
