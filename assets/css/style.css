@@ -4,11 +4,12 @@
         height: 1000px;
     }
 
-    .footers {
+   .footers {
     	font-family: "Comic Sans MS", Helvetica, Times New Roman;
     	font-size: 12px;
     	font-weight: bold;
-        position: fixed;
+        position: relative;
+        top: 2000px;
         bottom: 0;
         background-color: #e6e6e6;
         text-align: center;
@@ -31,5 +32,9 @@
      	font-weight: bold;
      }
 
+<<<<<<< HEAD
 
    
+=======
+   
+>>>>>>> f9d2f8a781f8abf958dd88182fa04a85665eb12e
