@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Petinder</title>
+    <title>Petinder - Match</title>
 
     <!--Adding BootStrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -33,27 +33,109 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="match.html">Match<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="signin.html">Sign In</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!-- END NAV -->
+    <!-- RANDOM PETS -->
+    <div class="fluid-container" id="randomMatch">
+        <div class="row">
+            <h2>Pets That Need Some Love</h2>
+            <div class="col-lg-4">
+                <div id="randomImage0"></div>
+                <p id="randomName0"></p>
+            </div>
+            <div class="col-lg-4">
+                <div id="randomImage1"></div>
+                <p id="randomName1"></p>
+            </div>
+            <div class="col-lg-4">
+                <div id="randomImage2"></div>
+                <p id="randomName2"></p>
+            </div>
+        </div>
+    </div>
+    <!-- END RANDOM PETS -->
+    <!-- SEARCH FORM -->
+    <form>
+        <h2>Search for Your Next Pet</h2>
+      <div class="form-row align-items-center">
+        <div class="col-sm-3 my-1">
+          <label for="inputState">Pet</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Dog</option>
+         <option>Cat</option>
+      </select>
+        </div>
+        <div class="col-sm-3 my-1">
+          <label for="inputState">Gender</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Male</option>
+         <option>Female</option>
+      </select>
+        </div>
+        <div class="col-sm-3 my-1">
+          <label for="inputState">Breed</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Male</option>
+         <option>Female</option>
+      </select>
+        </div>
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </form>
+    <!-- END SEARCH -->
+    <!-- MATCH -->
     <div class="fluid-container">
         <div class="row">
         <div class="col-lg-4"></div>
-            <div class="col-lg-4">
+            <div class="col-lg-4" id="match">
                 <div id="petImage"></div>
                 <h2 id="petName"></h2>
                 <h3 id="petGender"></h3>
-                <div id="petInfo"></div>
+                <p id="petInfo"></p>
                 <button id="pass">Pass</button>
                 <button id="rent">Rent</button>
-                <button id="adopt">Adopt</button>      
+                <button id="adopt">Adopt</button>
+                <!-- Button trigger modal -->
+                <div id="map-button">
+                    <h5>Located:<h6 id="location"></h6></h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Map</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="map"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
             </div>
         <div class="col-lg-4"></div>
         </div>
     </div>
-
+    <!-- END MATCH -->
     <!--Adding Footer Bootstrap-->
     <footer class="footers">
         <p>Copyright 2018 PeTinder</p>

@@ -7,6 +7,8 @@
     messagingSenderId: "16874393783"
   };
   firebase.initializeApp(config);
+  $('#quickstart-verify-email').hide();
+  $('#quickstart-password-reset').hide();
   /**
      * Handles the sign in button press.
      */
