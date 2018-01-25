@@ -1,7 +1,11 @@
 $(document).ready(function(){
     $('#match').show();
+    var arraymalePets = [];
+    var arrayfemalePets = [];
+    var arrayunknownPets = [];
     for (var i = 0; i < 3; i++){
-    var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
+        (function(i){
+            var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
             $.ajax({
                 type : 'GET',
                 data : {},
@@ -13,30 +17,63 @@ $(document).ready(function(){
                     var pic;
                     var image = $('<img>');
                     var name;
-                    pic = petfinder.pet.media.photos.photo[2].$t;
+                    pic = petfinder.pet.media.photos.photo[0].$t;
                     name = petfinder.pet.name.$t;
                     image.attr('src', pic);
-                    $('#randomName0').html(name);
-                    $('#randomImage0').html(image);
-                    $('#randomName1').html(name);
-                    $('#randomImage1').html(image);
-                    $('#randomName2').html(name);
-                    $('#randomImage2').html(image);
-                    console.log(petfinder);
-                    console.log('randomImage'+i);
+                    $('#randomName'+i).html(name);
+                    $('#randomImage'+i).html(image);
+
                 },
                 error : function(request,error)
                 {
                     alert("Request: "+JSON.stringify(request));
                 }
             });
+        })(i);
+    
+        }
+           for (var i = 0; i < 10; i++){
+        (function(i){
+            
+            var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
+            $.ajax({
+                type : 'GET',
+                data : {},
+                url : url+'&callback=?' ,
+                dataType: 'json',
+                success : function(data) {
+                    var gender;
+                    var petfinder = data.petfinder.pet;
+                    gender = petfinder.sex.$t;
+                     if (gender == 'M'){
+                        arraymalePets.push(petfinder);
+                    }
+                    else if (gender == 'F'){
+                        arrayfemalePets.push(petfinder);
+                    }
+                    else{
+                        arrayunknownPets.push(petfinder);
+                    }
+                    
+                    console.log('Boys: '+arraymalePets);
+                    console.log('Girls: '+arrayfemalePets);
+
+
+                },
+                error : function(request,error)
+                {
+                    alert("Request: "+JSON.stringify(request));
+                }
+            });
+        })(i);
+    
         }
     $("#adopt").on("click", function() {
             var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
             $.ajax({
                 type : 'GET',
                 data : {},
-                url : url+'&callback=?' ,
+                url : url +'&callback=?',
                 dataType: 'json',
                 success : function(data) {
                     var petfinder = data.petfinder;
