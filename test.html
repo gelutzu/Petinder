@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Petinder</title>
+  
   <style type="text/css">
     button,
     div,
@@ -11,7 +12,6 @@
     input {
       margin: 10px;
     }
-    
   </style>
 </head>
 
@@ -31,9 +31,42 @@
     <input id="add-band" type="submit" value="Add a Band that rocks!">
     </form>
 
-    <div id="petfinderInfo"></div>
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+    
+
+
+
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div id="petfinderInfo"></div>
+     
     <script type="text/javascript">
 
         $(document).ready(function(){
@@ -46,23 +79,36 @@
                 success : function(data) {              
                     // stores result
                     var result = '';
+                    var gifDiv = $("<div class='item'>");
         
                     var petfinder = data.petfinder;
                     var infoHTML = '<ul>';
                     infoHTML += '<li>';
                     infoHTML += '<strong>Description</strong><br>';
-                    infoHTML += petfinder.pet.description['$t'];
+                    infoHTML += petfinder.pet.description["$t"];
+                   
+                    infoHTML += '</li>';
+                    infoHTML +=  petfinder.pet.media.photos.photo[0].$t;
+                    infoHTML +=  petfinder.pet.breeds;
+                    
                     infoHTML += '</li>';
         
                     infoHTML += '</li>';
         
                     infoHTML += '</ul>';
-                    // return infoHTML;
+
+                    var image = $("<img>");
+                    image.attr("src", petfinder.pet.media.photos.photo[0].$t);
+                    
                     $('#petfinderInfo').html(infoHTML);
+                    gifDiv.append(image);
+                    $("#petfinderInfo").prepend(gifDiv);
         
-                    // $('#petfinderInfo').html(petfinder.pet.description['$t']);
-                    // 
+                    //$('#petfinderInfo').html(petfinder.pet.media.photos.photo[0].$t);
+                    
                     console.log(petfinder);
+                    console.log(petfinder.pet.media.photos.photo[0].$t);
+                    console.log(petfinder.pet.breeds.breed.$t);
                 },
                 error : function(request,error)
                 {
@@ -73,6 +119,11 @@
     
 </script>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
 </body> 
     
 </html>
