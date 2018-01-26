@@ -1,7 +1,26 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+
+}
+
+image {
+	margin:auto;
+	border-bottom: 1px solid black;
+	box-shadow: 1px 0px 5px yellow;
+
+	}
+
+	.aboutimage{
+
+		border: 1px solid darkgray;
+			box-shadow: 0px 0px 10px gold;
+	}
+
+.hiddenhtml {
+
+overflow-x: hidden;
+
 }
 
 .container { position:relative; }
@@ -44,6 +63,7 @@ html, body {
         top: 1000px;
         bottom: 0px;
         bottom: 0;
+        margin-bottom: 0;
         background-color: #FFD3A8;
         text-align: center;
         height: 7%;
@@ -98,7 +118,7 @@ html, body {
         text-align: center;
         margin: 1.5%;
         font-size: 50px;
-        background-color: #FFFFF;
+        background-color: #FfFFFF;
         width: 200px;
         border-radius: 50%;
         height: 200px;
@@ -119,14 +139,14 @@ html, body {
     #counter1 {
         float: left;
         margin: 50px;
-        color: #4c4d4f;
+         color: #68696b;
         margin-left: 120px
     }
 
     #counter2 {
         float: left;
         margin: 50px;
-        color: #4c4d4f;
+         color: #68696b;
         margin-left: 120px
     }
 
@@ -136,3 +156,42 @@ html, body {
         color: #68696b;
         margin-left: 120px
     }
+
+    .titles {
+    	margin-top: 30px;
+    	    color: #505050;
+    }
+
+     .container2 {
+
+     background-color: white;
+     width: 85%;	
+	padding-top: 1px;
+	padding-bottom: 1px;
+margin:auto;
+text-align:center;
+margin-bottom: 15px;
+border: solid lightgray 1px;
+
+
+     }
+
+       .container3 {
+       	     background-color: #F8F8F8;
+     width: 85%;	
+	padding-top: 1px;
+	padding-bottom: 1px;
+margin:auto;
+text-align:center;
+margin-bottom: 15px;
+margin-left: 92px;
+}
+
+   .aboutpage {background-color: #F8F8F8;
+   }
+
+   #team {
+   	width: 85%;	
+   	margin:auto;
+   	text-align:center;
+   }

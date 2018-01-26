@@ -11,15 +11,21 @@ $('.counter').each(function() {
     duration: 8000,
     easing:'linear',
     step: function() {
-      $this.text(Math.floor(this.countNum));
+      $this.text(commaSeparateNumber(Math.floor(this.countNum)));
     },
     complete: function() {
-      $this.text(this.countNum);
+      $this.text(commaSeparateNumber(this.countNum));
       //alert('finished');
     }
 
   });  
-  
-  
 
-});
+});  
+
+function commaSeparateNumber(val) {
+  while (/(\d+)(\d{3})/.test(val.toString())) {
+    val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+  }
+  return val;
+}
+  

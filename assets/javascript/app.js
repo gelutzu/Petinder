@@ -17,7 +17,7 @@ $(document).ready(function(){
                     var pic;
                     var image = $('<img>');
                     var name;
-                    pic = petfinder.pet.media.photos.photo[0].$t;
+                    pic = petfinder.pet.media.photos.photo[2].$t;
                     name = petfinder.pet.name.$t;
                     image.attr('src', pic);
                     $('#randomName'+i).html(name);
@@ -32,42 +32,42 @@ $(document).ready(function(){
         })(i);
     
         }
-           for (var i = 0; i < 10; i++){
-        (function(i){
+        //    for (var i = 0; i < 10; i++){
+        // (function(i){
             
-            var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
-            $.ajax({
-                type : 'GET',
-                data : {},
-                url : url+'&callback=?' ,
-                dataType: 'json',
-                success : function(data) {
-                    var gender;
-                    var petfinder = data.petfinder.pet;
-                    gender = petfinder.sex.$t;
-                     if (gender == 'M'){
-                        arraymalePets.push(petfinder);
-                    }
-                    else if (gender == 'F'){
-                        arrayfemalePets.push(petfinder);
-                    }
-                    else{
-                        arrayunknownPets.push(petfinder);
-                    }
+        //     var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
+        //     $.ajax({
+        //         type : 'GET',
+        //         data : {},
+        //         url : url+'&callback=?' ,
+        //         dataType: 'json',
+        //         success : function(data) {
+        //             var gender;
+        //             var petfinder = data.petfinder.pet;
+        //             gender = petfinder.sex.$t;
+        //              if (gender == 'M'){
+        //                 arraymalePets.push(petfinder);
+        //             }
+        //             else if (gender == 'F'){
+        //                 arrayfemalePets.push(petfinder);
+        //             }
+        //             else{
+        //                 arrayunknownPets.push(petfinder);
+        //             }
                     
-                    console.log('Boys: '+arraymalePets);
-                    console.log('Girls: '+arrayfemalePets);
+        //             console.log(arraymalePets);
+        //             console.log(rrayfemalePets);
 
 
-                },
-                error : function(request,error)
-                {
-                    alert("Request: "+JSON.stringify(request));
-                }
-            });
-        })(i);
+        //         },
+        //         error : function(request,error)
+        //         {
+        //             alert("Request: "+JSON.stringify(request));
+        //         }
+        //     });
+        // })(i);
     
-        }
+        // }
     $("#adopt").on("click", function() {
             var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
             $.ajax({
