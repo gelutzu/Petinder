@@ -4,6 +4,12 @@ html, body {
 
 }
 
+.hiddenhtml {
+
+overflow-x: hidden;
+
+}
+
 .container { position:relative; }
 
 .container video {
