@@ -4,6 +4,15 @@ html, body {
 
 }
 
+image {border-bottom: 1px solid black;
+
+	}
+
+	.aboutimage{
+
+		border: 1px solid darkgray;
+	}
+
 .hiddenhtml {
 
 overflow-x: hidden;
@@ -125,14 +134,14 @@ overflow-x: hidden;
     #counter1 {
         float: left;
         margin: 50px;
-        color: #4c4d4f;
+         color: #68696b;
         margin-left: 120px
     }
 
     #counter2 {
         float: left;
         margin: 50px;
-        color: #4c4d4f;
+         color: #68696b;
         margin-left: 120px
     }
 
@@ -141,4 +150,8 @@ overflow-x: hidden;
         margin: 50px;
         color: #68696b;
         margin-left: 120px
+    }
+
+    .titles {
+    	margin-top: 30px;
     }
