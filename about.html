@@ -17,9 +17,99 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+
+    <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: #082023;
+            height: 2000px;
+            z-index: -1;
+            color: white;
+        }
+
+        .drop {
+            background: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6)) );
+            background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+            width: 1px;
+            height: 89px;
+            position: absolute;
+            bottom: 200px;
+            -webkit-animation: fall .63s linear infinite;
+            -moz-animation: fall .63s linear infinite;
+               z-index: -1;
+        }
+
+        /* animate the drops*/
+        @-webkit-keyframes fall {
+            to {
+                margin-top: 900px;
+            }
+        }
+
+        @-moz-keyframes fall {
+            to {
+                margin-top: 900px;
+            }
+        }
+
+        /*Start Map Contact Form Styling*/
+
+        #contact{
+    background-color:#20B2AA;
+        color: #282828;
+    border-top: solid black 1px;
+   font-family: "Roboto", Monaco, monospace;
+   margin-top: 30px;
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    padding-bottom:20px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+    margin-bottom: 15px;
+    } 
+    }
+
+      #map {
+        height: 400px;
+        width: 100%;
+        border: 1px solid black;
+       }
+
+
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+
+
 </head>
 
-<body class = "aboutpage">
+<body class="rain">
     <!--Adding Navbar Bootstrap-->
     <nav class="navbar navbar-light">
         <!--Logo-->
@@ -46,97 +136,152 @@
         </div>
     </nav>
 
-    <div class = "container2" align="center">
-    <h1 class="titles" align="center">- Our Mission -</h1>
+    <div class="container2" align="center">
+        <h1 class="titles" align="center">- Our Mission -</h1>
 
-    <!-- Home Page Description-->
-    <div align="center" class="description">
-        <p>
-            Petinder is app that helps people match themselves up with pets that may never be
-            seen otherwise. <br />Our website allocates the use of API's to pull pet profiles from local
-            shelters along with other sources.
-        </p>
+        <!-- Home Page Description-->
+        <div align="center" class="description">
+            <p>
+                Petinder is app that helps people match themselves up with pets that may never be
+                seen otherwise. <br />Our website allocates the use of API's to pull pet profiles from local
+                shelters along with other sources.
+            </p>
+        </div>
+
     </div>
 
-</div>
 
+    <div class="container2" align="center">
+        <h1 class="titles" align="center">- About Us -</h1>
 
-    <div class = "container2" align="center">
-    <h1 class="titles" align="center">- About Us -</h1>
-
-    <div align="center" class="description">
-        <p>
-            This is our Project utilizing API's such as the Petfinder API to display
-            Pet Information in a Tinder-Like App, which allows the user to easily browse
-            through companion pets available for adoption.<br />
-            This team was organized and received guidance from mentors at Northwestern
-            Coding BootCamp in Evanston, Illinois.
-        </p>
+        <div align="center" class="description">
+            <p>
+                This is our Project utilizing API's such as the Petfinder API to display
+                Pet Information in a Tinder-Like App, which allows the user to easily browse
+                through companion pets available for adoption.<br />
+                This team was organized and received guidance from mentors at Northwestern
+                Coding BootCamp in Evanston, Illinois.
+            </p>
+        </div>
     </div>
-</div>
 
-        
-        <div class="container3">
-            <div class="row">
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="member">
-                    <div class="pic"><img src="img/Ahmed.jpg" alt="" class ="aboutimage"></div>
+    <div class= "rain2">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="img/Ahmed.jpg" alt="" class="aboutimage"></div>
                     <h4><strong>Ahmed Akhtar</strong></h4>
                     <span><h6>Developer and Database Manager</h6></span>
                     <div class="social">
-                        <a class="logo" href="https://github.com/ahmedakhtar11"><img border="0" alt="Github" src="assets/images/octocat1.png" height="60" width="60"></a>
-                    </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <div class="member">
-                    <div class="pic"><img src="img/chris3.png" alt="" class ="aboutimage"></div>
-                    <h4><strong>Chris Hutchinson</strong></h4>
-                    <span><h6>Developer and Tech Specialist</h6></span>
-                    <div class="social">
-                        <a class="logo" href="http://github.com/chrishutch"><img border="0" alt="Github" src="assets/images/octocat1.png" height="60" width="60"></a>
-                    </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6">
-                    <div class="member">
-                    <div class="pic"><img src="img/team-3.jpg" alt="" class ="aboutimage"></div>
-                    <h4><strong>George Horopciuc</strong></h4>
-                    <span><h6>Developer</h6></span>
-                    <div class="social">
-                        <a class="logo" href="https://github.com/gelutzu"><img border="0" alt="Github" src="assets/images/octocat1.png" height="60" width="60"></a>
-                    </div>
+                        <a class="logo" href="https://github.com/ahmedakhtar11"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
                     </div>
                 </div>
             </div>
-    
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="img/chris3.png" alt="" class="aboutimage"></div>
+                    <h4><strong>Chris Hutchinson</strong></h4>
+                    <span><h6>Developer and Tech Specialist</h6></span>
+                    <div class="social">
+                        <a class="logo" href="http://github.com/chrishutch"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="img/team-3.jpg" alt="" class="aboutimage"></div>
+                    <h4><strong>George Horopciuc</strong></h4>
+                    <span><h6>Developer</h6></span>
+                    <div class="social">
+                        <a class="logo" href="https://github.com/gelutzu"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
+
+<!--Start Contact Section-->
+    <section id="contact">
+        <div class="container">
+            <div class="well well-sm">
+            <h1><strong>Contact Us</strong></h1>
+                    <div class="row">
+                <div class="col-md-7">
+
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            // Create a map object and specify the DOM element for display.
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                center: { lat: 42.057900, lng: -87.676171 },
+                                // Set mapTypeId to SATELLITE in order
+                                // to activate satellite imagery.
+                                mapTypeId: 'satellite',
+                                zoom: 18
+                            });
+                        }
+
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ASDRLo3YobFTHAGt2h_1_uUoRgdhcr0&callback=initMap">
+                        async defer></script>
+             </div>
+
+                <div class="col-md-5">
+                    <h4><strong>Get in Touch</strong></h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="" value="" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="" value="" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="" value="" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-default" type="submit" name="button">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!--Second Footer-->
     <footer class="footer2about">
 
-    <div class = "containerfooter">
-    <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
-    <p>"THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. A
-    SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT"
-    <br/>
-        <br/>
-    -Scruffy
-    </p>
-    </div>
+        <div class="containerfooter">
+            <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
+            <p>
+                "THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. A
+                SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT"
+                <br />
+                <br />
+                -Scruffy
+            </p>
+        </div>
     </footer>
-   
 
-</body>
 
     <!--Adding Footer Bootstrap-->
     <footer class="footersabout">
         <p>Copyright 2018 PeTinder</p>
     </footer>
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="assets/javascript/index.js"></script>
 
 </body>
 

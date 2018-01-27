@@ -82,16 +82,16 @@ overflow-x: hidden;
 
         .footersabout {
         font-family: "Comic Sans MS", Helvetica, Times New Roman;
+        color: black;
         font-size: 12px;
         font-weight: bold;
         position: relative;
-        top: 700px;
         bottom: 0px;
         bottom: 0;
         margin-bottom: 0;
         background-color: #FFD3A8;
         text-align: center;
-        height: 7%;
+        height: 3%;
         width: 100%;
         padding: 1%;
         left: 0px;
@@ -107,13 +107,12 @@ overflow-x: hidden;
         font-family: "Lucida Console", Monaco, monospace;
         font-weight: bold;
         position: relative;
-        top: 700px;
         bottom: 0px;
         bottom: 0;
         margin-bottom: 0;
         background-color: #D8584B;
         text-align: center;
-        height: 60%;
+        height: 22%;
         width: 100%;
         padding: 1%;
         left: 0px;
@@ -216,28 +215,28 @@ overflow-x: hidden;
     }
 
      .container2 {
-
+    z-index: 2;
      background-color: white;
      width: 85%;	
 	padding-top: 1px;
 	padding-bottom: 1px;
 margin:auto;
 text-align:center;
-margin-bottom: 15px;
+margin-bottom: 25px;
 border: solid lightgray 1px;
+opacity: .9;
 
 
      }
 
-       .container3 {
-       	     background-color: #F8F8F8;
-     width: 85%;	
-	padding-top: 1px;
-	padding-bottom: 1px;
-margin:auto;
-text-align:center;
-margin-bottom: 15px;
-margin-left: 92px;
+.rain2 {
+    width: 85%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 92px;
 }
 
 
@@ -256,4 +255,14 @@ margin:auto;
    	margin:auto;
    	text-align:center;
    }
+
+
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+    to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+    to {margin-top:900px;}
+}
 
