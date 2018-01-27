@@ -17,11 +17,12 @@ $(document).ready(function(){
                     var pic;
                     var image = $('<img>');
                     var name;
-                    pic = petfinder.pet.media.photos.photo[2].$t;
+                    pic = petfinder.pet.media.photos.photo[0].$t;
                     name = petfinder.pet.name.$t;
                     image.attr('src', pic);
                     $('#randomName'+i).html(name);
                     $('#randomImage'+i).html(image);
+                    console.log(data);
 
                 },
                 error : function(request,error)
