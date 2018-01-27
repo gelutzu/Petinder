@@ -34,7 +34,7 @@ function commaSeparateNumber(val) {
 
 
 // number of drops created.
-var nbDrop = 1200; 
+var nbDrop = 900; 
 
 // function to generate a random number range.
 function randRange( minNum, maxNum) {
