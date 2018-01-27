@@ -7,14 +7,21 @@ html, body {
 image {
 	margin:auto;
 	border-bottom: 1px solid black;
-	box-shadow: 1px 0px 5px yellow;
 
-	}
+}
 
-	.aboutimage{
+.footerlogo {
+    margin-top: 20px;
+    border-radius:50%;
+    margin-bottom: 20px;
+    border: .5px solid black;
+}
+
+.aboutimage{
 
 		border: 1px solid darkgray;
-			box-shadow: 0px 0px 10px gold;
+		box-shadow: 0px 0px 8px gold;
+		
 	}
 
 .hiddenhtml {
@@ -55,12 +62,13 @@ overflow-x: hidden;
         border-top: solid black 1px;
     }
 
+
     .footers {
         font-family: "Comic Sans MS", Helvetica, Times New Roman;
         font-size: 12px;
         font-weight: bold;
         position: relative;
-        top: 1000px;
+        top: 900px;
         bottom: 0px;
         bottom: 0;
         margin-bottom: 0;
@@ -71,6 +79,53 @@ overflow-x: hidden;
         padding: 1%;
         left: 0px;
         border-top: 1px solid black;
+    }
+
+
+        .footersabout {
+        font-family: "Comic Sans MS", Helvetica, Times New Roman;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        bottom: 0px;
+        bottom: 0;
+        margin-bottom: 0;
+        background-color: #FFD3A8;
+        text-align: center;
+        height: 3%;
+        width: 100%;
+        padding: 1%;
+        left: 0px;
+        border-top: 1px solid black;
+    }
+
+
+       .footer2about {
+    
+     
+        font-size: 2.3vw;
+        color: white;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-weight: bold;
+        position: relative;
+        bottom: 0px;
+        bottom: 0;
+        margin-bottom: 0;
+        background-color: #D8584B;
+        text-align: center;
+        height: 22%;
+        width: 100%;
+        padding: 1%;
+        left: 0px;
+        border-top: 1px solid black;
+    }
+
+
+
+    .footer2description {
+
+        font-family: "arial";
     }
 
     .navbar {
@@ -98,7 +153,6 @@ overflow-x: hidden;
 }
 
     #logodiv {
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -163,28 +217,36 @@ overflow-x: hidden;
     }
 
      .container2 {
-
+    z-index: 2;
      background-color: white;
      width: 85%;	
 	padding-top: 1px;
 	padding-bottom: 1px;
 margin:auto;
 text-align:center;
-margin-bottom: 15px;
+margin-bottom: 25px;
 border: solid lightgray 1px;
+opacity: .9;
 
 
      }
 
-       .container3 {
-       	     background-color: #F8F8F8;
-     width: 85%;	
-	padding-top: 1px;
-	padding-bottom: 1px;
+.rain2 {
+    width: 85%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 92px;
+}
+
+
+.containerfooter {
+width: 70%;    
 margin:auto;
-text-align:center;
-margin-bottom: 15px;
-margin-left: 92px;
+
+
 }
 
    .aboutpage {background-color: #F8F8F8;
@@ -195,3 +257,14 @@ margin-left: 92px;
    	margin:auto;
    	text-align:center;
    }
+
+
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+    to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+    to {margin-top:900px;}
+}
+
