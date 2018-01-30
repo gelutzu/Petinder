@@ -1,8 +1,4 @@
 
-html, body {
-    max-width: 100%;
-
-}
 
 image {
 	margin:auto;
@@ -26,7 +22,6 @@ image {
 
 .hiddenhtml {
 
-overflow-x: hidden;
 
 }
 
@@ -39,7 +34,8 @@ overflow-x: hidden;
 }
     .overlay {
         position: absolute;
-        top: 220;
+        top: 45%;
+        left: 10%;
         z-index: 1;
         color: white;
         font-size: 80px;
@@ -56,70 +52,78 @@ overflow-x: hidden;
         height: 50%;
         width: 100%;
         object-fit: fill;
-        -webkit-transform: scaleX(1.4);
         right: 0;
         border-bottom: 1px solid black;
         border-top: solid black 1px;
     }
 
 
-    .footers {
-        font-family: "Comic Sans MS", Helvetica, Times New Roman;
-        font-size: 12px;
-        font-weight: bold;
-        position: relative;
-        top: 900px;
-        bottom: 0px;
-        bottom: 0;
-        margin-bottom: 0;
-        background-color: #FFD3A8;
-        text-align: center;
-        height: 7%;
-        width: 100%;
-        padding: 1%;
-        left: 0px;
-        border-top: 1px solid black;
-    }
+.footers {
+    font-family: "Comic Sans MS", Helvetica, Times New Roman;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 150%;
+    margin-bottom: 0;
+    background-color: #75A6EF;
+    height: 9%;
+    padding-bottom: 2px solid black;
+    padding: 1%;
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 5px auto 10px auto;
+    text-align: center;
+}
+
+p {
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
 
 
-        .footersabout {
-        font-family: "Comic Sans MS", Helvetica, Times New Roman;
-        color: black;
-        font-size: 12px;
-        font-weight: bold;
-        position: relative;
-        bottom: 0px;
-        bottom: 0;
-        margin-bottom: 0;
-        background-color: #FFD3A8;
-        text-align: center;
-        height: 3%;
-        width: 100%;
-        padding: 1%;
-        left: 0px;
-        border-top: 1px solid black;
-    }
+.footersabout {
+    font-family: "Comic Sans MS", Helvetica, Times New Roman;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0px;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #75A6EF;
+    text-align: center;
+    height: 3%;
+    width: 100%;
+    padding: 1%;
+    left: 0px;
+    border-top: 1px solid black;
+}
 
 
-       .footer2about {
-    
-     
-        font-size: 2.3vw;
-        color: white;
-        font-family: "Lucida Console", Monaco, monospace;
-        font-weight: bold;
-        position: relative;
-        bottom: 0px;
-        bottom: 0;
-        margin-bottom: 0;
-        background-color: #D8584B;
-        text-align: center;
-        height: 22%;
-        width: 100%;
-        padding: 1%;
-        left: 0px;
-        border-top: 1px solid black;
-    }
+.footer2about {
+    font-size: 2.3vw;
+    color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+    position: relative;
+    bottom: 0px;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #FEFEFE;
+    text-align: center;
+    height: 22%;
+    width: 100%;
+    padding: 1%;
+    left: 0px;
+    border-top: 1px solid black;
+}
 
 
 
@@ -133,7 +137,7 @@ overflow-x: hidden;
         border-bottom: 1px solid black;
     }
 
- .logoname {
+    .logoname {
     color: white;
     text-shadow: 1px 1px black;
     font-family: "Helvetica", Times New Roman;
@@ -141,20 +145,14 @@ overflow-x: hidden;
     font-weight: bold;
     }
 
-     .logoname:hover {
+    .logoname:hover {
     color: white;
     font-family: "Comic Sans MS", Helvetica, Times New Roman;
     font-size: 22px;
     font-weight: bold;
     }
 
-    .logo2 {
-    margin-left: 5px;
-}
 
-    #logodiv {
-    margin-bottom: 10px;
-}
 
     .description {
         text-align: center;
@@ -211,17 +209,39 @@ overflow-x: hidden;
         margin-left: 120px
     }
 
+.logo2 {
+    margin-left: 5px;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    margin: 100px auto 0;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+.logodiv {
+    margin-left: 5px;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    margin: 100px auto 0;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
     .titles {
-    	margin-top: 30px;
-    	    color: #505050;
+    margin-top: 30px;
+    	    olor: #505050;
     }
 
-     .container2 {
-    z-index: 2;
-     background-color: white;
-     width: 85%;	
-	padding-top: 1px;
-	padding-bottom: 1px;
+.container2 {
+z-index: 2;
+background-color: white;
+width: 85%;	
+padding-top: 1px;
+padding-bottom: 1px;
 margin:auto;
 text-align:center;
 margin-bottom: 25px;
@@ -257,14 +277,4 @@ margin:auto;
    	margin:auto;
    	text-align:center;
    }
-
-
-
-/* animate the drops*/
-@-webkit-keyframes fall {
-    to {margin-top:900px;}
-}
-@-moz-keyframes fall {
-    to {margin-top:900px;}
-}
 
