@@ -25,7 +25,15 @@ image {
 
 }
 
-.container { position:relative; }
+#navbarSupportedContent {
+    float: right;
+    margin-left: 95%;
+    text-align: right;
+}
+
+.container {
+    position: relative;
+}
 
 .container video {
 
