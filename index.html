@@ -6,16 +6,20 @@
     <title>Petinder</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Adding BootStrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!--Adding BootStrap JavScript-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="assets/javascript/index.js"></script>
 </head>
 
 <body>
@@ -76,43 +80,36 @@
 
     <!-- Counters-->
     <div class="container" align="center">
+        <div class="row">
 
-        <!-- Counter1-->
-        <div id="counter1">
-            <img src="assets/images/hourglass.png" alt="Mountain View"><br />
-            <span class="counter" data-count="6500000">0</span>
-            <h3 class="countertitle">New Pets A Year</h3>
-        </div>
-        <!-- Counter2-->
-        <div id="counter2">
-            <img src="assets/images/house.png" alt="Mountain View"><br />
-            <span class="counter" data-count="85">0</span>
-            <h3 class="countertitle">Pets Adopted</h3>
+            <!-- Counter1-->
+            <div class="col" id="counter1">
+                <img src="assets/images/hourglass.png" alt="Mountain View"><br />
+                <span class="counter" data-count="6500000">0</span>
+                <h3 class="countertitle">New Pets A Year</h3>
+            </div>
+            <!-- Counter2-->
+            <div class="col" id="counter2">
+                <img src="assets/images/house.png" alt="Mountain View"><br />
+                <span class="counter" data-count="85">0</span>
+                <h3 class="countertitle">Pets Adopted</h3>
 
-        </div>
-        <!-- Counter3-->
-        <div id="counter3">
-            <img src="assets/images/target.jpg" alt="Mountain View"><br />
-            <span class="counter" data-count="2200">0</span>
-            <h3 class="countertitle">Adoption Goal</h3>
-        </div>
-
-
-        <div id="logodiv" align="center">
-            <!--<a class="logo2" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="100" height="100"></a>-->
+            </div>
+            <!-- Counter3-->
+            <div class="col" id="counter3">
+                <img src="assets/images/target.jpg" alt="Mountain View"><br />
+                <span class="counter" data-count="2200">0</span>
+                <h3 class="countertitle">Adoption Goal</h3>
+            </div>
 
         </div>
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     </div>
-
 
     <script src="assets/javascript/index.js"></script>
 
-
     <!--Adding Footer Bootstrap-->
-    <footer class="footers">
-        <p>Copyright 2018 PeTinder</p>
+    <footer id="footers" class="fluid-container text-center footers">
+        Copyright 2018 PeTinder
     </footer>
 
 </body>
