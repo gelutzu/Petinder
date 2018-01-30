@@ -41,38 +41,110 @@
         </div>
     </nav>
     <!-- END NAV -->
-    <!-- RANDOM PETS -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-            <h2>Most Rented Pet</h2>
+
+<!-- MOST VISITED PETS -->
+<div class="row">
+            <div class="col-md-12">
+            <h2 id="matchTitle">Most Visited Pets</h2>
             </div>
-            <div class="col-lg-4"></div>
             </div>
-        </div>
-        <div class="container" id="randomMatch">
-            <div class="row">
-            <div class="col-lg-4">
-                <div id="randomImage0"></div>
-                <p id="randomName0"></p>
-            </div>
-            <div class="col-lg-4">
-                <div id="randomImage1"></div>
-                <p id="randomName1"></p>
-            </div>
-            <div class="col-lg-4">
-                <div id="randomImage2"></div>
-                <p id="randomName2"></p>
-            </div>
-        </div>
+
+<div class="card-deck">
+  <!-- VISIT 1 -->
+  <div class="card">
+    <div id="randomImage0"></div>
+    <div class="card-body">
+      <h5 class="card-title" id="randomName0"></h5>
+      <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#randomModal0">More Info</button>
+    </div>   
+  </div>
+  <!-- VISIT MODAL 1 -->
+  <div class="modal fade" id="randomModal0" tabindex="-1" role="dialog" aria-labelledby="random0" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="randomName0"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="randomInfo0"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  <!-- VISIT 2 -->
+  <div class="card">
+    <div id="randomImage1"></div>
+    <div class="card-body">
+      <h5 class="card-title" id="randomName1"></h5>
+      <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#randomModal1">More Info</button>
+    </div>   
+  </div>
+  <!-- VISIT MODAL 2 -->
+  <div class="modal fade" id="randomModal1" tabindex="-1" role="dialog" aria-labelledby="random1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="randomName1"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="randomInfo1"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  <!-- VISIT 3 -->
+  <div class="card">
+    <div id="randomImage2"></div>
+    <div class="card-body">
+      <h5 class="card-title" id="randomName2"></h5>
+      <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#randomModal2">More Info</button>
+    </div>   
+  </div>
+</div>
+<!-- VISIT MODAL 3 -->
+  <div class="modal fade" id="randomModal2" tabindex="-1" role="dialog" aria-labelledby="random2" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="randomName2"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p id="randomInfo2"></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<!-- END MOST VISITED PETS -->
+
+    <!-- SEARCH -->
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-lg-12">
+      <h2 id="matchTitle">Search for Your Next Pet</h2>
     </div>
-    <!-- END RANDOM PETS -->
-    <!-- SEARCH FORM -->
-    <form>
-        <h2>Search for Your Next Pet</h2>
+  </div>
+    <form id="search">  
       <div class="form-row align-items-center">
-        <div class="col-sm-3 my-1">
+      <div class="col-md-3"></div>
+        <div class="col-md-2">
           <label for="inputState">Pet</label>
       <select id="inputState" class="form-control">
         <option selected>Choose...</option>
@@ -80,7 +152,7 @@
          <option>Cat</option>
       </select>
         </div>
-        <div class="col-sm-3 my-1">
+        <div class="col-md-2 my-1">
           <label for="inputState">Gender</label>
       <select id="inputState" class="form-control">
         <option selected>Choose...</option>
@@ -88,7 +160,7 @@
          <option>Female</option>
       </select>
         </div>
-        <div class="col-sm-3 my-1">
+        <div class="col-md-2 my-1">
           <label for="inputState">Breed</label>
       <select id="inputState" class="form-control">
         <option selected>Choose...</option>
@@ -96,31 +168,64 @@
          <option>Female</option>
       </select>
         </div>
-        <div class="col-auto my-1">
-          <button type="submit" class="btn btn-primary">Search</button>
+        <div class="col-md-3"></div>
+      </div>
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Search</button>
         </div>
+        <div class="col-lg-4"></div>
       </div>
     </form>
+</div>
     <!-- END SEARCH -->
+<br>
+
+<!-- TEST -->
+
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title" id="petName"></h5>
+    <h6 class="card-subtitle mb-2 text-muted" id="petGender"></h6>
+    <p class="card-text" id="petInfo"></p>
+    <button class="btn btn-danger btn-lg" id="pass">Pass</button>
+    <button class="btn btn-warning btn-lg" id="rent">Rent</button>
+    <button class="btn btn-success btn-lg" id="adopt">Adopt</button>
+  </div>
+  <div class="card-footer text-muted">
+    <div id="map-button">
+                    <h5>Located:<h6 id="location"></h6></h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
+                </div>
+  </div>
+</div>
+
+<!-- END OF TEST -->
+
     <!-- MATCH -->
     <div class="fluid-container">
         <div class="row">
         <div class="col-lg-4"></div>
-            <div class="col-lg-4" id="match">
+            <div class="card col-lg-4" id="match">
                 <div id="petImage"></div>
-                <h2 id="petName"></h2>
+                <div class="card-body">
+                <h2 class="card-title" id="petName"></h2>
                 <h3 id="petGender"></h3>
-                <p id="petInfo"></p>
-                <button id="pass">Pass</button>
-                <button id="rent">Rent</button>
-                <button id="adopt">Adopt</button>
+                <p class="card-text" id="petInfo"></p>
+                <button class="btn btn-danger btn-lg" id="pass">Pass</button>
+                <button class="btn btn-warning btn-lg" id="rent">Rent</button>
+                <button class="btn btn-success btn-lg" id="adopt">Adopt</button>
                 <!-- Button trigger modal -->
                 <div id="map-button">
                     <h5>Located:<h6 id="location"></h6></h5>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
                 </div>
 
-                <!-- Modal -->
+                <!-- Map Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -144,7 +249,7 @@
         </div>
     </div>
     <!-- END MATCH -->
-    <!--Adding Footer Bootstrap-->
+    <!-- Footer -->
     <footer class="footers">
         <p>Copyright 2018 PeTinder</p>
     </footer>

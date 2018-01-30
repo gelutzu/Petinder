@@ -155,7 +155,7 @@ overflow-x: hidden;
     #logodiv {
     margin-bottom: 10px;
 }
-
+w
     .description {
         text-align: center;
         font-size: 24px;
@@ -267,4 +267,34 @@ margin:auto;
 @-moz-keyframes fall {
     to {margin-top:900px;}
 }
+
+/*MATCH PAGE*/
+#image1, #image2, #image3{
+    border: 2px solid black;
+
+}
+#matchTitle{
+    text-align: center;
+    font-size: 35px;
+    margin: 30px auto 30px auto;
+}
+#randomImage0, #randomImage1, #randomImage2{
+    text-align: center;
+}
+#randomName0, #randomName1, #randomName2{
+    text-align: center;
+    font-size: 22px;
+}
+.visitedImage{
+    width: 100%;
+    height: 300px;
+}
+#search{
+    text-align: center;
+}
+#match{
+    border: 2px solid black;
+}
+
+/*END MATCH PAGE*/
 
