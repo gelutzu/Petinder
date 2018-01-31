@@ -26,7 +26,7 @@
         }
 
         body {
-            background: #FEFEFE;
+            background: #fdfdf8;
             height: 2000px;
             z-index: -1;
             color: #383838;
@@ -64,14 +64,14 @@
 @media (max-width: 768px) { 
     #contact iframe {
     margin-bottom: 15px;
-    } 
-    }
+} 
+}
 
-      #map {
-        height: 400px;
-        width: 100%;
-        border: 1px solid black;
-       }
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+}
 
     </style>
 
@@ -136,122 +136,121 @@
     </div>
 
 
-    <div class= "rain2">
+    <div class="box">
         <div class="row">
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member">
-                    <div class="pic"><img src="img/Ahmed.jpg" alt="" class="aboutimage"></div>
-                    <h4><strong>Ahmed Akhtar</strong></h4>
-                    <span><h6>Developer and Database Manager</h6></span>
-                    <div class="social">
-                        <a class="logo" href="https://github.com/ahmedakhtar11"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
-                    </div>
+            <div class="col">
+                <div class="pic"><img src="img/Ahmed.jpg" alt="" class="aboutimage"></div>
+                <h4><strong>Ahmed Akhtar</strong></h4>
+                <h6><span>Developer and Database Manager</span></h6>
+                <div class="social">
+                    <a class="logo" href="https://github.com/ahmedakhtar11"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member">
-                    <div class="pic"><img src="img/chris3.png" alt="" class="aboutimage"></div>
-                    <h4><strong>Chris Hutchinson</strong></h4>
-                    <span><h6>Developer and Tech Specialist</h6></span>
-                    <div class="social">
-                        <a class="logo" href="http://github.com/chrishutch"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
-                    </div>
+            <div class="col">
+                <div class="pic"><img src="img/chris3.png" alt="" class="aboutimage"></div>
+                <h4><strong>Chris Hutchinson</strong></h4>
+                <h6><span>Developer and Tech Specialist</span></h6>
+                <div class="social">
+                    <a class="logo" href="http://github.com/chrishutch"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="member">
-                    <div class="pic"><img src="img/team-3.jpg" alt="" class="aboutimage"></div>
-                    <h4><strong>George Horopciuc</strong></h4>
-                    <span><h6>Developer</h6></span>
-                    <div class="social">
-                        <a class="logo" href="https://github.com/gelutzu"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
-                    </div>
+            <div class="col">
+                <div class="pic"><img src="img/team-3.jpg" alt="" class="aboutimage"></div>
+                <h4><strong>George Horopciuc</strong></h4>
+                <h6><span>Developer</span></h6>
+                <div class="social">
+                    <a class="logo" href="https://github.com/gelutzu"><img border="0" alt="Github" src="assets/images/octocat2.png" height="60" width="60"></a>
                 </div>
             </div>
+
         </div>
-
     </div>
 
-<!--Start Contact Section-->
-    <section id="contact">
-        <div class="container">
-            <div class="well well-sm">
-            <h1><strong>Contact Us</strong></h1>
+
+        <!--Start Contact Section-->
+        <section id="contact">
+            <div class="container">
+                <div class="well well-sm">
+                    <h1><strong>Contact Us</strong></h1>
                     <div class="row">
-                <div class="col-md-7">
+                        <div class="col-md-7">
 
-                    <div id="map"></div>
-                    <script>
-                        function initMap() {
-                            // Create a map object and specify the DOM element for display.
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: { lat: 42.057900, lng: -87.676171 },
-                                // Set mapTypeId to SATELLITE in order
-                                // to activate satellite imagery.
-                                mapTypeId: 'satellite',
-                                zoom: 18
-                            });
-                        }
+                            <div id="map"></div>
+                            <script>
+                                function initMap() {
+                                    // Create a map object and specify the DOM element for display.
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        center: { lat: 42.057900, lng: -87.676171 },
+                                        // Set mapTypeId to SATELLITE in order
+                                        // to activate satellite imagery.
+                                        mapTypeId: 'satellite',
+                                        zoom: 18
+                                    });
+                                }
 
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ASDRLo3YobFTHAGt2h_1_uUoRgdhcr0&callback=initMap">
-                        async defer></script>
-             </div>
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ASDRLo3YobFTHAGt2h_1_uUoRgdhcr0&callback=initMap">
+                                async defer></script>
+                        </div>
 
-                <div class="col-md-5">
-                    <h4><strong>Get in Touch</strong></h4>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="" value="" placeholder="Name">
+                        <div class="col-md-5">
+                            <h4><strong>Get in Touch</strong></h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" value="" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="" value="" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="" value="" placeholder="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn btn-default" type="submit" name="button">
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                                </button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="" value="" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control" name="" value="" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
-                        </div>
-                        <button class="btn btn-default" type="submit" name="button">
-                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
-                        </button>
-                    </form>
+                    </div>
                 </div>
+        </section>
+
+
+        <!--Second Footer-->
+        <footer class="footer2about">
+
+            <div class="containerfooter">
+                <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
+                <p>
+                    "THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. A
+                    SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT"
+                    <br />
+                    <br />
+                    -Scruffy
+                </p>
             </div>
-        </div>
-    </section>
-
-
-    <!--Second Footer-->
-    <footer class="footer2about">
-
-        <div class="containerfooter">
-            <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
-            <p>
-                "THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. A
-                SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT"
-                <br />
-                <br />
-                -Scruffy
-            </p>
-        </div>
-    </footer>
-
-
-    <!--Adding Footer Bootstrap-->
-    <footer class="footersabout">
-        <p>Copyright 2018 PeTinder</p>
-    </footer>
+        </footer>
 
 
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="assets/javascript/index.js"></script>
+
+
+        <!--Adding Footer Bootstrap-->
+        <footer class="footersabout">
+            <p>Copyright 2018 PeTinder</p>
+        </footer>
+
+
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="assets/javascript/index.js"></script>
 
 </body>
 
