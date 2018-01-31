@@ -292,9 +292,6 @@ margin:auto;
    }
 
 
-<<<<<<< HEAD
-
-
 /* animate the drops*/
 @-webkit-keyframes fall {
     to {margin-top:900px;}
@@ -327,10 +324,10 @@ margin:auto;
 #search{
     text-align: center;
 }
-#match{
-    border: 2px solid black;
+.searchImage{
+    width: 100%;
+    height: 500px;
 }
 
 /*END MATCH PAGE*/
-=======
->>>>>>> e26298c0b628fbc0d866b5b536dc1f6dd2230785
+

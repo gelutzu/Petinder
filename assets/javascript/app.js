@@ -48,43 +48,16 @@ $(document).ready(function(){
         })(i);
     
         }
+$("#adopt").on("click", function(){
+    window.location.href = "signin.html";
 
-        //    for (var i = 0; i < 10; i++){
-        // (function(i){
-            
-        //     var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
-        //     $.ajax({
-        //         type : 'GET',
-        //         data : {},
-        //         url : url+'&callback=?' ,
-        //         dataType: 'json',
-        //         success : function(data) {
-        //             var gender;
-        //             var petfinder = data.petfinder.pet;
-        //             gender = petfinder.sex.$t;
-        //              if (gender == 'M'){
-        //                 arraymalePets.push(petfinder);
-        //             }
-        //             else if (gender == 'F'){
-        //                 arrayfemalePets.push(petfinder);
-        //             }
-        //             else{
-        //                 arrayunknownPets.push(petfinder);
-        //             }
-                    
-        //             console.log(arraymalePets);
-        //             console.log(rrayfemalePets);
+});
+$("#rent").on("click", function(){
+    window.location.href = "signin.html";
+
+});
 
 
-        //         },
-        //         error : function(request,error)
-        //         {
-        //             alert("Request: "+JSON.stringify(request));
-        //         }
-        //     });
-        // })(i);
-    
-        // }
 $("#submit").on("click", function(){
     $('#match').show();
     var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
@@ -117,7 +90,7 @@ $("#submit").on("click", function(){
                         gender = 'Female';
                     }
                     image.attr('src', pic);
-                    image.addClass('visitedImage');
+                    image.addClass('searchImage');
                     image.addClass('card-img-top');
                     image.attr('alt', 'Card image cap');
                     $('#petInfo').html(info);
@@ -136,7 +109,7 @@ $("#submit").on("click", function(){
             });
 });
 
-    $("#adopt").on("click", function() {
+    $("#pass").on("click", function() {
             var url = "https://api.petfinder.com/pet.getRandom?key=e3c9b6bee87f4314a2b6cd95e68fda76&output=full&format=json";
             $.ajax({
                 type : 'GET',
@@ -167,7 +140,7 @@ $("#submit").on("click", function(){
                         gender = 'Female';
                     }
                     image.attr('src', pic);
-                    image.addClass('visitedImage');
+                    image.addClass('searchImage');
                     image.addClass('card-img-top');
                     image.attr('alt', 'Card image cap');
                     $('#petInfo').html(info);

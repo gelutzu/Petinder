@@ -44,36 +44,45 @@
             </ul>
         </div>
     </nav>
+    
+    <div class="fluid-container">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
     <form class="form-signin">
       <img class="mb-4" src="assets/images/logofullycropped.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+      <input type="email" id="email" class="form-control" placeholder="Email address" required="" autofocus="">
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="password" class="form-control" placeholder="Password" required>
-  <!--     <div class="checkbox mb-3">
+      <input type="password" id="password" class="form-control" placeholder="Password" required="">
+  <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-      </div> -->
+      </div>
       <br>
       <button class="btn btn-primary btn-lg" id="quickstart-sign-in" name="signin">Sign In</button>
       <button class="btn btn-primary btn-lg" id="quickstart-sign-up" name="signup">Sign Up</button>
-      <button class="btn btn-dark" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="btn btn-dark" disabled id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+      
 
     </form>
-
-    <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-            <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-          </div>
+  </div>
+  <div class="col-lg-4"></div>
+</div>
+<br>
+<div class="row">
+  <div class="col">
+    <button class="btn btn-dark" disabled="" id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="btn btn-dark" disabled="" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+  </div>
+</div>
+  </div>
 
     <!--Adding Footer Bootstrap-->
-    <footer class="footers">
-        <p>Copyright 2018 PeTinder</p>
+    <footer id="footers" class="fluid-container text-center footers">
+        Copyright 2018 PeTinder
     </footer>
 </body>
 

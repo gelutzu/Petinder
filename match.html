@@ -182,49 +182,29 @@
     <!-- END SEARCH -->
 <br>
 
-<!-- TEST -->
-
-<div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title" id="petName"></h5>
-    <h6 class="card-subtitle mb-2 text-muted" id="petGender"></h6>
-    <p class="card-text" id="petInfo"></p>
-    <button class="btn btn-danger btn-lg" id="pass">Pass</button>
-    <button class="btn btn-warning btn-lg" id="rent">Rent</button>
-    <button class="btn btn-success btn-lg" id="adopt">Adopt</button>
-  </div>
-  <div class="card-footer text-muted">
-    <div id="map-button">
-                    <h5>Located:<h6 id="location"></h6></h5>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
-                </div>
-  </div>
-</div>
-
-<!-- END OF TEST -->
-
     <!-- MATCH -->
     <div class="fluid-container">
-        <div class="row">
-        <div class="col-lg-4"></div>
-            <div class="card col-lg-4" id="match">
-                <div id="petImage"></div>
-                <div class="card-body">
-                <h2 class="card-title" id="petName"></h2>
-                <h3 id="petGender"></h3>
-                <p class="card-text" id="petInfo"></p>
-                <button class="btn btn-danger btn-lg" id="pass">Pass</button>
-                <button class="btn btn-warning btn-lg" id="rent">Rent</button>
-                <button class="btn btn-success btn-lg" id="adopt">Adopt</button>
-                <!-- Button trigger modal -->
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="card" id="match">
+              <div id="petImage"></div>
+            <div class="card-body">
+              <h5 class="card-title" id="petName"></h5>
+              <h6 class="card-subtitle mb-2 text-muted" id="petGender"></h6>
+              <p class="card-text" id="petInfo"></p>
+              <div class="text-center">
+              <button class="btn btn-danger btn-lg" id="pass">Pass</button>
+              <button class="btn btn-warning btn-lg" id="rent">Rent</button>
+              <button class="btn btn-success btn-lg" id="adopt">Adopt</button>
+            </div>
+            </div>
+              <div class="card-footer text-muted">
                 <div id="map-button">
-                    <h5>Located:<h6 id="location"></h6></h5>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
+                  <h5>Located:<h6 id="location"></h6></h5>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Map</button>
                 </div>
-
+              </div>
                 <!-- Map Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -245,13 +225,12 @@
                   </div>
                 </div>      
             </div>
-        <div class="col-lg-4"></div>
-        </div>
+        <div class="col-lg-3"></div>
     </div>
     <!-- END MATCH -->
     <!-- Footer -->
-    <footer class="footers">
-        <p>Copyright 2018 PeTinder</p>
+    <footer id="footers" class="fluid-container text-center footers">
+        Copyright 2018 PeTinder
     </footer>
 </body>
 
