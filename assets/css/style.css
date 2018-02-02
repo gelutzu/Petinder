@@ -14,6 +14,12 @@ image {
     border-bottom: 1px solid black;
 }
 
+h4 {
+  text-shadow: 1px 1px white;
+
+}
+
+
 .fluid-container{
 
     margin-top: 8%;
@@ -30,7 +36,7 @@ image {
 .aboutimage{
 
 		border: 1px solid darkgray;
-		box-shadow: 0px 0px 8px gold;
+		box-shadow: 1px 1px 10px goldenrod;
 		
 	}
 
@@ -54,7 +60,7 @@ image {
 }
     .overlay {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 10%;
         z-index: 1;
         color: white;
@@ -309,6 +315,11 @@ margin:auto;
 .searchImage{
     width: 100%;
     height: 500px;
+}
+
+.btn-outline-success {
+font-family: "Arial";
+background-color: lawngreen;
 }
 
 /*END MATCH PAGE*/
