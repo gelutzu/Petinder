@@ -8,14 +8,17 @@
     margin-left: 3%;
 }
 
-li:hover{font-weight: bolder;
-text-shadow: 0px 0px 8px #75A6EF;
-}
 
 image {
     margin: auto;
     border-bottom: 1px solid black;
 }
+
+.fluid-container{
+
+    margin-top: 8%;
+}
+
 
 .footerlogo {
     margin-top: 20px;
@@ -37,8 +40,6 @@ image {
 }
 
 #navbarSupportedContent {
-    float: right;
-    margin-left: 95%;
     text-align: right;
 }
 
@@ -153,27 +154,17 @@ p {
         border-bottom: 1px solid black;
     }
 
-    .logoname {
+    .navbar-brand {
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px white;
     font-family: "Helvetica", Times New Roman;
     font-size: 24px;
     font-weight: bold;
-    }
+} 
 
-    .logoname:hover {
-    color: white;
-    font-family: "Comic Sans MS", Helvetica, Times New Roman;
-    font-size: 22px;
-    font-weight: bold;
-    }
-
-<<<<<<< HEAD
     #logodiv {
     margin-bottom: 10px;
 }
-=======
->>>>>>> e26298c0b628fbc0d866b5b536dc1f6dd2230785
 
     .description {
         text-align: center;
@@ -290,15 +281,6 @@ margin:auto;
    	margin:auto;
    	text-align:center;
    }
-
-
-/* animate the drops*/
-@-webkit-keyframes fall {
-    to {margin-top:900px;}
-}
-@-moz-keyframes fall {
-    to {margin-top:900px;}
-}
 
 /*MATCH PAGE*/
 #image1, #image2, #image3{
