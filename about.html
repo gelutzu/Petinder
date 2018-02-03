@@ -1,7 +1,6 @@
-﻿<Html>
-
+﻿<!DOCTYPE html>
 <head>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <html lang="en">
     <meta charset="utf-8" />
     <title>Petinder</title>
 
@@ -17,129 +16,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-
-    <style>
-        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-        html {
-            height: 100%;
-        }
-
-        body {
-            background: #fdfdf8;
-            height: 2000px;
-            z-index: -1;
-            color: #383838;
-        }
-
-        /*Start Map Contact Form Styling*/
-
-        #contact {
-            background-color: #F7B749;
-            color: #282828;
-            border-top: solid black 1px;
-            font-family: "Roboto", Monaco, monospace;
-            margin-top: 30px;
-        }
-
-#contact .well{
-    margin-top:30px;
-    border-radius:0;
-}
-
-#contact .form-control{
-    border-radius: 0;
-    border:2px solid #1e1e1e;
-}
-
-#contact button{
-    border-radius:0;
-    border:2px solid #1e1e1e;
-}
-
-#contact .row{
-    padding-bottom:20px;
-}
-
-@media (max-width: 768px) { 
-    #contact iframe {
-    margin-bottom: 15px;
-} 
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-    border: 1px solid black;
-}
-
-    </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
 </head>
 
 <body>
-    <!--Adding Navbar Bootstrap-->
-    <nav class="navbar navbar-light">
-        <!--Logo-->
-        <a class="logo" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="40" height="40"></a>
-        <!--Logo Name-->
-        <a class="logoname" href="index.html" style="text-decoration:none">PeTinder</a>
-        <!--Toggler-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logofullycropped.png" width="30" height="30" class="d-inline-block align-top" alt="PeTinder"> PeTinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!--NavBar Links-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="match.html">Match</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">App <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
+        
     </nav>
-
-    <div class="container2" align="center">
-        <h1 class="titles" align="center">- Our Mission -</h1>
-
-        <!-- Home Page Description-->
-        <div align="center" class="description">
-            <p>
-                Petinder is app that helps people match themselves up with pets that may never be
-                seen otherwise. <br />Our website allocates the use of API's to pull pet profiles from local
-                shelters along with other sources.
-            </p>
+    <div class="container-fluid">
+        <!-- OUR MISSION -->
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 about">
+            <h1 class="titles text-center">- Our Mission -</h1>
+            <div class="description">
+                <p>
+                    We provide pets facing adversity with strong and enduring, professionally supported one-to-one relationships that change their lives for the better, forever.
+                </p>
+            </div>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-
+        <!-- ABOUT US -->
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 about">
+                    <h1 class="titles text-center">- About Us -</h1>
+                        <div align="center" class="description">
+                <p>
+                    PeTinder is a new app created to bring orphaned and lonely pets together for changing pet’s lives by matching them with caring humans to guide them on a path to success. PeTinder has operated under the belief that inherent in every pet is the ability to succeed and thrive in life. We help develop positive relationships that have a direct and lasting effect on the lives of pets.<br />
+                    This team was organized and received guidance from mentors at Northwestern
+                    Coding BootCamp in Evanston, Illinois.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
     </div>
 
 
-    <div class="container2" align="center">
-        <h1 class="titles" align="center">- About Us -</h1>
-
-        <div align="center" class="description">
-            <p>
-                This is our Project utilizing API's such as the Petfinder API to display
-                Pet Information in a Tinder-Like App, which allows the user to easily browse
-                through companion pets available for adoption.<br />
-                This team was organized and received guidance from mentors at Northwestern
-                Coding BootCamp in Evanston, Illinois.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="box">
         <div class="row">
-
-            <div class="col">
+            <div class="col-md-4 text-center">
                 <div class="pic"><img src="img/Ahmed.jpg" alt="" class="aboutimage"></div>
                 <h4><strong>Ahmed Akhtar</strong></h4>
                 <h6><span>Developer and Database Manager</span></h6>
@@ -148,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 text-center">
                 <div class="pic"><img src="img/chris3.png" alt="" class="aboutimage"></div>
                 <h4><strong>Chris Hutchinson</strong></h4>
                 <h6><span>Developer and Tech Specialist</span></h6>
@@ -157,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-4 text-center">
                 <div class="pic"><img src="img/team-3.jpg" alt="" class="aboutimage"></div>
                 <h4><strong>George Horopciuc</strong></h4>
                 <h6><span>Developer</span></h6>
@@ -211,7 +144,7 @@
                                 <div class="form-group">
                                     <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
                                 </div>
-                                <button class="btn btn-default" type="submit" name="button">
+                                <button class="btn btn-success" type="submit" name="button">
                                     <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
                                 </button>
                             </form>
@@ -220,31 +153,17 @@
                 </div>
         </section>
 
-
-        <!--Second Footer-->
-        <footer class="footer2about">
-
-            <div class="containerfooter">
-                <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
-                <p>
-                    "THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. A
-                    SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT"
-                    <br />
-                    <br />
-                    -Scruffy
-                </p>
-            </div>
-        </footer>
-
-
-
-
+        <blockquote class="blockquote text-center">
+            <img src="assets/images/dogfooter.png" alt="dog" class="footerlogo">
+          <p class="mb-0">THE PETINDER CREW ARE THE NAVY SEALS OF THE DEVELOPER WORLD. <br>A SMALL ELITE TEAM THAT ALWAYS GETS THE JOB DONE RIGHT</p>
+          <footer class="blockquote-footer"><cite title="Source Title">Scruffy</cite></footer>
+        </blockquote>
 
 
         <!--Adding Footer Bootstrap-->
-        <footer class="footersabout">
-            <p>Copyright 2018 PeTinder</p>
-        </footer>
+    <footer id="footers" class="fluid-container text-center footers">
+        Copyright 2018 PeTinder
+    </footer>
 
 
 

@@ -1,22 +1,69 @@
+/*ALL PAGES*/
+body{
+    background-color: #FCFDF8;
+}
+.navbar {
+        background-color: #F7B749;
+        border-bottom: 1px solid grey;
+}
+.nav-link:first-child{
+    margin-left: 50px;
 
+}
+/*END OF ALL PAGES*/
 
-.box {
-    align-content: center;
-    align-items: center;
-    vertical-align: middle;
-    align-self: center;
-    margin-left: 3%;
+/*ABOUT PAGE*/
+
+/*Start Map Contact Form Styling*/
+#contact {
+    background-color: #F7B749;
+    color: #282828;
+    border-top: solid black 1px;
+    font-family: "Roboto", Monaco, monospace;
+    margin-top: 30px;
+}
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+    text-shadow: 1px 1px white;
 }
 
-li:hover{font-weight: bolder;
-text-shadow: 0px 0px 8px #75A6EF;
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
 }
 
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    padding-bottom:20px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+    margin-bottom: 15px;
+} 
+}
+blockquote{
+    padding: 25px 0px 25px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+}
 image {
     margin: auto;
     border-bottom: 1px solid black;
 }
 
+h4 {
+  text-shadow: 1px 1px white;
+
+}
 .footerlogo {
     margin-top: 20px;
     border-radius:50%;
@@ -27,33 +74,13 @@ image {
 .aboutimage{
 
 		border: 1px solid darkgray;
-		box-shadow: 0px 0px 8px gold;
+		box-shadow: 1px 1px 10px goldenrod;
 		
 	}
 
-.hiddenhtml {
-
-
-}
-
-#navbarSupportedContent {
-    float: right;
-    margin-left: 95%;
-    text-align: right;
-}
-
-.container {
-
-}
-
-.container video {
-
-    position:relative;
-    z-index:0;
-}
     .overlay {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 10%;
         z-index: 1;
         color: white;
@@ -66,25 +93,12 @@ image {
 
     #video {
         z-index: 0;
-        position: relative;
-        height: 400px;
-        height: 50%;
+        height: 100%;
         width: 100%;
-        object-fit: fill;
-        right: 0;
-        border-bottom: 1px solid black;
-        border-top: solid black 1px;
+        border: 1px solid grey;
+        margin-bottom: 25px;
+
     }
-
-
-
-
-p {
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-
 
 #footers {
     font-family: "Comic Sans MS", Helvetica, Times New Roman;
@@ -103,76 +117,6 @@ p {
     left: 0px;
     border-top: 1px solid black;
 }
-
-.footersabout {
-    font-family: "Comic Sans MS", Helvetica, Times New Roman;
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    position: relative;
-    bottom: 0px;
-    bottom: 0;
-    margin-bottom: 0;
-    background-color: #75A6EF;
-    text-align: center;
-    height: 3%;
-    width: 100%;
-    padding: 1%;
-    left: 0px;
-    border-top: 1px solid black;
-}
-
-
-.footer2about {
-    font-size: 2.3vw;
-    color: black;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-weight: bold;
-    position: relative;
-    bottom: 0px;
-    bottom: 0;
-    margin-bottom: 0;
-    background-color: #FEFEFE;
-    text-align: center;
-    height: 22%;
-    width: 100%;
-    padding: 1%;
-    left: 0px;
-    border-top: 1px solid black;
-}
-
-
-
-    .footer2description {
-
-        font-family: "arial";
-    }
-
-    .navbar {
-        background-color: #F7B749;
-        border-bottom: 1px solid black;
-    }
-
-    .logoname {
-    color: white;
-    text-shadow: 1px 1px black;
-    font-family: "Helvetica", Times New Roman;
-    font-size: 24px;
-    font-weight: bold;
-    }
-
-    .logoname:hover {
-    color: white;
-    font-family: "Comic Sans MS", Helvetica, Times New Roman;
-    font-size: 22px;
-    font-weight: bold;
-    }
-
-
-    #logodiv {
-    margin-bottom: 10px;
-}
-
     .description {
         text-align: center;
         font-size: 24px;
@@ -222,8 +166,6 @@ p {
         vertical-align: middle;
     }
 
-
-
     #counter {
      
         margin: 50px;
@@ -259,34 +201,17 @@ p {
     color: #505050;
     }
 
-.container2 {
-    z-index: 2;
+.about {
     background-color: white;
-    width: 85%;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin: auto;
+    margin: 25px;
     text-align: center;
     margin-bottom: 25px;
-    border: solid lightgray 1px;
-    opacity: .9;
-}
-
-
-.containerfooter {
-width: 70%;    
-margin:auto;
-
-
+    border: solid gray 1px;
 }
 
    .aboutpage {background-color: #F8F8F8;
-   }
-
-   #team {
-   	width: 85%;	
-   	margin:auto;
-   	text-align:center;
    }
 
 
@@ -324,6 +249,7 @@ margin:auto;
     width: 100%;
     height: 500px;
 }
+
 #searchbar{
     margin-top: 30px;
     background-color: #F7B749; 

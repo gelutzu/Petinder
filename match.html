@@ -20,25 +20,26 @@
 
 <body>
     <!--Adding Navbar Bootstrap-->
-    <nav class="navbar navbar-light">
-        <!--Logo-->
-        <a class="logo" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="40" height="40"></a>
-        <!--Logo Name-->
-        <a class="logoname" href="index.html" style="text-decoration:none">PeTinder</a>
-        <!--Toggler-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logofullycropped.png" width="30" height="30" class="d-inline-block align-top" alt="PeTinder"> PeTinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!--NavBar Links-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="match.html">Match<span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
+        
     </nav>
     <!-- END NAV -->
 
@@ -231,7 +232,7 @@
         <div class="col-lg-3"></div>
     </div>
     <!-- END MATCH -->
-    <!-- Footer -->
+    <!--Adding Footer Bootstrap-->
     <footer id="footers" class="fluid-container text-center footers">
         Copyright 2018 PeTinder
     </footer>

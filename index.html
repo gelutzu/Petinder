@@ -1,66 +1,64 @@
-﻿<html>
-
+﻿<!DOCTYPE html>
 <head>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <html lang="en">
     <meta charset="utf-8" />
     <title>Petinder</title>
 
     <!-- CSS -->
-   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Adding BootStrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--Adding BootStrap JavScript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Javascript -->
-<!--     <script type="text/javascript" src="assets/javascript/app.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="assets/javascript/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
 
 </head>
 
 <body>
-    <!--Adding Navbar Bootstrap-->
-    <nav class="navbar navbar-light">
-        <!--Logo-->
-        <a class="logo" href="index.html"><img border="0" alt="Petinder Logo" src="assets/images/logofullycropped.png" width="40" height="40"></a>
-        <!--Logo Name-->
-        <a class="logoname" href="index.html" style="text-decoration:none">PeTinder</a>
-        <!--Toggler-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--NAVBAR-->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logofullycropped.png" width="30" height="30" class="d-inline-block align-top" alt="PeTinder"> PeTinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!--NavBar Links-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="match.html">Match</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">App <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
+        
     </nav>
 
-    <br />
-    <br />
-    <br />
+    <!-- END NAVBAR -->
 
-    <div class="fluid-container">
-
-        <video id="video" autoplay muted loop>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video id="video" autoplay muted loop>
+            <source src="assets/dogadoptionwalkthru.mp4" type="video/mp4" />
+        </video>
+        <div class="tp-caption tp-resizeme overlay text-center">
+            <p>Matching Pets with People!</p>
+        </div>
+    </div>
+  </div>
+</div>
+        <!-- <video id="video" autoplay muted loop>
             <source src="assets/dogadoptionwalkthru.mp4" type="video/mp4" />
 
         </video>
@@ -68,11 +66,7 @@
         <div class="tp-caption tp-resizeme overlay" align="center">
 
             <p>Matching Pets with People!</p>
-        </div>
-    </div>
-
-    <br />
-    <br />
+        </div> -->
 
     <!-- Home Page Description-->
     <div align="center" class="description">
@@ -100,7 +94,7 @@
             </div>
             <!-- Counter3-->
             <div class="col" id="counter">
-                <img src="assets/images/target.jpg" alt="Mountain View"><br />
+                <img src="assets/images/targetp.png" alt="Mountain View"><br />
                 <span class="counter" data-count="2200">0</span><br />
                 <span class="countertitle">Adoption Goal</span>
             </div>
