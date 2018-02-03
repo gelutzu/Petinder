@@ -31,7 +31,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -40,63 +40,29 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facts.html">FAQ</a>
+                </li>
             </ul>
         </div>   
     </nav>
     <!-- END NAVBAR -->
-    <div class="col-lg-6 col-sm-6">
-    <div class="card hovercard">
-        <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
-            <!-- http://lorempixel.com/850/280/people/9/ -->
-        </div>
-        <div class="useravatar">
-            <img alt="" src="http://lorempixel.com/100/100/people/9/">
-        </div>
-        <div class="card-info"> <span class="card-title">Pamela Anderson</span>
+    <div class="fluid-container">
 
+        <div class="row">
+            <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">Thanks for Adopting!</h5>
+        <p class="card-text">We will contact you shortly by email! In the meantime, please read our adoptions FAQs!</p>
+        <a href="facts.html" class="btn btn-primary">Go to FAQS</a>
         </div>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
     </div>
-    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
-        <div class="btn-group" role="group">
-            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <div class="hidden-xs">Stars</div>
-            </button>
-        </div>
-        <div class="btn-group" role="group">
-            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                <div class="hidden-xs">Favorites</div>
-            </button>
-        </div>
-        <div class="btn-group" role="group">
-            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                <div class="hidden-xs">Following</div>
-            </button>
-        </div>
-    </div>
-
-        <div class="well">
-      <div class="tab-content">
-        <div class="tab-pane fade in active" id="tab1">
-          <h3>This is tab 1</h3>
-        </div>
-        <div class="tab-pane fade in" id="tab2">
-          <h3>This is tab 2</h3>
-        </div>
-        <div class="tab-pane fade in" id="tab3">
-          <h3>This is tab 3</h3>
-        </div>
-      </div>
-    </div>
-    
-    </div>
-    <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
-    <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
-    <div class="quickstart-user-details-container">
-              Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-              <div>Firebase auth <code>currentUser</code> object value:</div>
-              <pre><code id="quickstart-account-details">null</code></pre>
-            </div>
+</div>
 
     <!-- Javascript -->
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
@@ -106,7 +72,7 @@
     <script src="assets/javascript/app.js"></script>
 <script src="assets/javascript/signin.js"></script>
     <!--Adding Footer Bootstrap-->
-    <footer id="footers" class="footer-copyright text-center footers">
+    <footer id="footer" class="footer-copyright text-center footers">
         Copyright 2018 PeTinder
     </footer>
 

@@ -112,6 +112,20 @@ h4 {
     border-top: 1px solid grey;
     margin-top: 10%;
 }
+#footer {
+    position: absolute;
+    font-family: 'Mogra', cursive;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: #75A6EF;
+    width: 100%;
+    border-top: 1px solid grey;
+    margin-top: 10%;
+}
 footer{
     margin-top: 50px;
 }
@@ -127,6 +141,11 @@ footer{
 }
 .countertitle2 {
     font-size: 18px;
+}
+#adoption{
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 80px;
+    margin-left: 20%;
 }
 /*Counter Class of rapidly increasing numbers. (0 to total)*/
 .counter {
