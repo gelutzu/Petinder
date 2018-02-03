@@ -43,35 +43,34 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
-        </div>
-        
+        </div>   
     </nav>
 
-<div class="fluid-container" id="signin">
-    <div class="row">
-      <div class="col-md-2"></div>
-<div class="col-md-8">
+    <div class="fluid-container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8" id="signin">
+            <img class="mb-4" src="assets/images/logofullycropped.png" alt="" width="72" height="72">
+            <br>
+            <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+            
+            <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+            <br/><br/>
+            <button disabled class="btn btn-primary" id="quickstart-sign-in" name="signin">Sign In</button>
+            
+            <button class="btn btn-outline-primary" id="quickstart-sign-up" name="signup">Sign Up</button>
+            <br>
+            <br>
+            <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+            
+            <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
 
-          <img class="mb-4" src="assets/images/logofullycropped.png" alt="" width="72" height="72">
-          <br>
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
-          
-          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
-          <br/><br/>
-          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
-          
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
-          
-          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-
-          <!-- Container where we'll display the user details -->
-          <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-            <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-          </div>
+            <!-- Container where we'll display the user details -->
+            <div class="quickstart-user-details-container">
+              <span id="quickstart-sign-in-status"></span>
+              
+              <pre><code id="quickstart-account-details"></code></pre>
+            </div>
         </div>
         <div class="col-md-2"></div>
       </div>

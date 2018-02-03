@@ -200,8 +200,11 @@ footer{
 }
 #signin{
     margin-bottom: 50%;
+    margin-top: 50px;
 }
-
+.quickstart-user-details-container{
+    display: block;
+}
 /*MATCH PAGE*/
 #image1, #image2, #image3{
     border: 2px solid black;

@@ -137,7 +137,9 @@
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-          
+          setTimeout(function(){
+                  window.location.href = "profile.html"; }, 
+                  4000);
           // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           if (!emailVerified) {
             document.getElementById('quickstart-verify-email').disabled = false;
