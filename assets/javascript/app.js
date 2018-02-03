@@ -49,11 +49,11 @@ $(document).ready(function(){
     
         }
 $("#adopt").on("click", function(){
-    window.location.href = "signin.html";
+    window.location.href = "about.html";
 
 });
 $("#rent").on("click", function(){
-    window.location.href = "signin.html";
+    window.location.href = "rent.html";
 
 });
 
