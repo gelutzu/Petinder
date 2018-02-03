@@ -126,6 +126,7 @@ $("#submit").on("click", function(){
                     var city;
                     var state;
                     var zipcode;
+                    var address;
                     info = petfinder.pet.description['$t'];
                     pic = petfinder.pet.media.photos.photo[2].$t;
                     name = petfinder.pet.name.$t;
@@ -133,11 +134,20 @@ $("#submit").on("click", function(){
                     city = petfinder.pet.contact.city.$t;
                     state = petfinder.pet.contact.state.$t;
                     zipcode = petfinder.pet.contact.zip.$t;
+                    address = petfinder.pet.contact.address1.$t;
                     if (gender == 'M'){
                         gender = 'Male';
                     }
                     else if (gender == 'F'){
                         gender = 'Female';
+                    }
+                    if (address === null){
+                        address = '';
+                        $('#map').html('<iframe width="100%" height="430px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q='+city+'%2C%20'+state+'+'+zipcode+'&key=AIzaSyCqhvq2DjBtN4xdBzPeVgy6q2NDdzssL3I" allowfullscreen></iframe>');
+                    }
+                    else{
+                        address = petfinder.pet.contact.address1.$t;
+                        $('#map').html('<iframe width="100%" height="430px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q='+address+'%2C%20'+city+'%2C%20'+state+'+'+zipcode+'&key=AIzaSyCqhvq2DjBtN4xdBzPeVgy6q2NDdzssL3I" allowfullscreen></iframe>');
                     }
                     image.attr('src', pic);
                     image.addClass('searchImage');
@@ -147,9 +157,9 @@ $("#submit").on("click", function(){
                     $('#petName').html(name);
                     $('#petImage').html(image);
                     $('#petGender').html(gender);
+                    $('#petAddress').text(address);
                     $('#location').text(city +', '+ state + ' '+zipcode);
-                    $('#map').html('<iframe width="100%" height="150%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q='+city+'%2C%20'+state+'+'+zipcode+'&key=AIzaSyCqhvq2DjBtN4xdBzPeVgy6q2NDdzssL3I" allowfullscreen></iframe>');
-                    console.log(city);
+                    console.log(address);
                     console.log(petfinder);
                 },
                 error : function(request,error)

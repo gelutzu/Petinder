@@ -18,7 +18,6 @@ $('.counter').each(function() {
     },
     complete: function() {
       $this.text(commaSeparateNumber(this.countNum));
-      //alert('finished');
     }
 
   });  

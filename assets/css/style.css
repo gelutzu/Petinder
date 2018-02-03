@@ -1,10 +1,15 @@
 /*ALL PAGES*/
+html {
+  position: relative;
+  min-height: 100%;
+}
 body{
     background-color: #FCFDF8;
 }
 .navbar {
         background-color: #F7B749;
         border-bottom: 1px solid grey;
+        font-family: 'Mogra', cursive;
 }
 .nav-link:first-child{
     margin-left: 50px;
@@ -45,7 +50,7 @@ body{
 @media (max-width: 768px) { 
     #contact iframe {
     margin-bottom: 15px;
-} 
+    } 
 }
 blockquote{
     padding: 25px 0px 25px;
@@ -62,23 +67,19 @@ image {
 
 h4 {
   text-shadow: 1px 1px white;
-
+  font-family: 'Mogra', cursive;
 }
-.footerlogo {
+.quote-logo {
     margin-top: 20px;
     border-radius:50%;
     margin-bottom: 20px;
     border: .5px solid black;
 }
-
 .aboutimage{
-
 		border: 1px solid darkgray;
-		box-shadow: 1px 1px 10px goldenrod;
-		
-	}
-
-    .overlay {
+		box-shadow: 1px 1px 10px goldenrod;		
+}
+.overlay {
         position: absolute;
         top: 50%;
         left: 10%;
@@ -89,55 +90,46 @@ h4 {
         text-shadow: 2px 2px black;
         font-size: 60px;
         font-size: 6vw;
-    }
-
-    #video {
+}
+#video {
         z-index: 0;
         height: 100%;
         width: 100%;
         border: 1px solid grey;
         margin-bottom: 25px;
-
-    }
-
-#footers {
-    font-family: "Comic Sans MS", Helvetica, Times New Roman;
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    position: relative;
-    bottom: 0px;
-    bottom: 0;
-    margin-bottom: 0;
-    background-color: #75A6EF;
-    text-align: center;
-    height: 7%;
-    width: 100%;
-    padding: 1%;
-    left: 0px;
-    border-top: 1px solid black;
 }
-    .description {
+#footers {
+    position: relative;
+    font-family: 'Mogra', cursive;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: #75A6EF;
+    width: 100%;
+    border-top: 1px solid grey;
+
+}
+footer{
+    margin-top: 50px;
+}
+.description {
         text-align: center;
         font-size: 24px;
         color: #404040;
         margin-left: 100px;
         margin-right: 100px;
-    }
-
-
-    .countertitle {
-
+}
+.countertitle {
     font-size:24px;
-    }
-
+}
 .countertitle2 {
     font-size: 18px;
 }
-
-
 /*Counter Class of rapidly increasing numbers. (0 to total)*/
-    .counter {
+.counter {
         align-content: center;
         align-items: center;
         margin: 100px auto 0;
@@ -149,10 +141,9 @@ h4 {
         border-radius: 50%;
         height: 200px;
         vertical-align: middle;
-    }
-
-    /*Counter Class of slowing increasing number.(Total-((Total-200)(# Hours)*/
-    .counter2 {
+}
+/*Counter Class of slowing increasing number.(Total-((Total-200)(# Hours)*/
+.counter2 {
         align-content: center;
         align-items: center;
         margin: 100px auto 0;
@@ -164,16 +155,12 @@ h4 {
         border-radius: 50%;
         height: 200px;
         vertical-align: middle;
-    }
-
-    #counter {
-     
+}
+#counter{  
         margin: 50px;
          color: #68696b;
         margin-left: 120px
-    }
-
-
+}
 .logo2 {
     margin-left: 5px;
     vertical-align: middle;
@@ -183,8 +170,6 @@ h4 {
     text-align: center;
     margin-top: 300px;
 }
-
-
 .logodiv {
     margin-left: 5px;
     vertical-align: middle;
@@ -194,13 +179,10 @@ h4 {
     text-align: center;
     margin-top: 300px;
 }
-
-
-    .titles {
+.titles {
     margin-top: 30px;
     color: #505050;
-    }
-
+}
 .about {
     background-color: white;
     padding-top: 1px;
@@ -210,10 +192,15 @@ h4 {
     margin-bottom: 25px;
     border: solid gray 1px;
 }
-
-   .aboutpage {background-color: #F8F8F8;
-   }
-
+.aboutpage{
+    background-color: #F8F8F8;
+}
+.form-signin{
+    margin-top: 100px;
+}
+#signin{
+    margin-bottom: 50%;
+}
 
 /*MATCH PAGE*/
 #image1, #image2, #image3{
@@ -262,6 +249,10 @@ h4 {
 #match{
     margin-top: 10px;
     margin-bottom: 30px;
+}
+#map{
+    width: 100%;
+    height: 430px;
 }
 /*END MATCH PAGE*/
 

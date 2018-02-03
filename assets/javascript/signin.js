@@ -7,17 +7,15 @@
     messagingSenderId: "16874393783"
   };
   firebase.initializeApp(config);
-  $('#quickstart-verify-email').hide();
-  $('#quickstart-password-reset').hide();
-  /**
-     * Handles the sign in button press.
-     */
-    function toggleSignIn() {
+
+  function toggleSignIn() {
       if (firebase.auth().currentUser) {
         // [START signout]
         firebase.auth().signOut();
+        
         // [END signout]
-      } else {
+      } 
+      else {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         if (email.length < 4) {
@@ -139,7 +137,8 @@
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-          document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+          
+          // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           if (!emailVerified) {
             document.getElementById('quickstart-verify-email').disabled = false;
           }
@@ -149,7 +148,7 @@
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
           document.getElementById('quickstart-sign-in').textContent = 'Sign in';
-          document.getElementById('quickstart-account-details').textContent = 'null';
+          // document.getElementById('quickstart-account-details').textContent = 'null';
           // [END_EXCLUDE]
         }
         // [START_EXCLUDE silent]
